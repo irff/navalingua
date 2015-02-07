@@ -248,24 +248,41 @@
 			<div class="c-3 columns"></div>
 			<div class="c-3 columns">
 				<div class="profile">
-					<img src="img/Ellsy.jpg" alt="ELLSY AYU ANGGRAENI">
+					<a href="#ellsy" rel="leanModal">
+						<img src="img/Ellsy.jpg" alt="ELLSY AYU ANGGRAENI">
+					</a>
 					<h4 class="centered">ELLSY</h4>
 					<p class="centered">Indonesian Consultant</p>
-					<a href="mailto:ellsy@navalingua.com"><i class="icon-envelope small-icon"></i></a>
+					<a href="mailto:ellsy@navalingua.com" class="contact"><i class="icon-envelope small-icon"></i></a>
 				</div>
 			</div>
 			<div class="c-3 columns">
 				<div class="profile">
-					<img src="img/Reza.jpg" alt="M. REZZA SYAH">
+					<a href="#rezza" rel="leanModal">
+						<img src="img/Reza.jpg" alt="M. REZZA SYAH">
+					</a>
 					<h4 class="centered">REZZA SYAH</h4>
 					<p class="centered">English Consultant</p>
-					<a href="mailto:rezza@navalingua.com"><i class="icon-envelope small-icon"></i></a>
+					<a href="mailto:rezza@navalingua.com" class="contact"><i class="icon-envelope small-icon"></i></a>
 				</div>
 			</div>
 			<div class="c-3 columns"></div>
 
 		</div>		
 	</section>
+	
+	<div id="ellsy" class="modal-window">
+		<h3>Ellsy</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusamus soluta, voluptate eum, quaerat beatae doloremque adipisci consequuntur blanditiis aliquid, inventore libero! Accusamus, nemo adipisci incidunt pariatur, impedit voluptates ipsam.</p>
+		<div href="#" class="modal-close"></div>
+	</div>
+
+	<div id="rezza" class="modal-window">
+		<h3>Rezza</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusamus soluta, voluptate eum, quaerat beatae doloremque adipisci consequuntur blanditiis aliquid, inventore libero! Accusamus, nemo adipisci incidunt pariatur, impedit voluptates ipsam.</p>
+		<div href="#" class="modal-close"></div>
+	</div>
+
 	<section class="section-7" id="contact">
 		<div class="row">
 			<div class="c-12 columns">
@@ -318,6 +335,7 @@
 	<script src="js/jquery.sudoSlider.min.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
+	<script src="js/jquery.leanModal.min.js"></script>
 	
 	<script>
 		$('#slides').superslides({
@@ -381,6 +399,11 @@
 		    classie.toggle( body, 'wrapper-push' );
 		    classie.toggle( menuRight, 'open' );
 		}});
+
+		$(function() {
+			$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal-close" });		
+		});
+
 	</script>
 </body>
 </html>
