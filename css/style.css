@@ -649,10 +649,21 @@ i.process-icon:hover {
 }
 /* Testimonial */
 
+
+.testimonial h4 {
+	text-transform: none;
+	font-weight: normal;
+	font-style: italic;
+}
+
 .testimonial img {
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
+}
+
+.test-slider {
+	margin: 0;
 }
 
 .test-slider li {
@@ -660,8 +671,8 @@ i.process-icon:hover {
 	height: 100%;
 	margin-left: 5vw;
 	margin-right: 5vw;
-	margin-top: 50px;
-	margin-bottom: 80px;
+	margin-top: 65px;
+	margin-bottom: 70px;
 }
 .test-arrow-prev,
 .test-arrow-next {
